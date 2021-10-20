@@ -3,9 +3,10 @@ import { addToCart } from "../cart/cartSlice";
 import styles from "./Product.module.css";
 import "react-toastify/dist/ReactToastify.min.css";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  const { name, description, price, image } = product;
+  const { id, name, description, price, image } = product;
   const dispatch = useDispatch();
   const history = useHistory();
 

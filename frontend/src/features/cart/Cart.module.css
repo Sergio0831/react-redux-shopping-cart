@@ -1,11 +1,128 @@
 .cart {
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .cart h2 {
   text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.cartEmpty {
+  font-size: 20px;
+  margin-top: 30px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
 }
 
 .cart table {
   width: 100%;
+  margin-top: 2rem;
+  border-spacing: 0;
+}
+
+.cart table tbody th {
+  border-top: 1px solid rgba(52, 73, 94, 0.3);
+}
+
+.cart table thead th {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.cart table thead th:first-child {
+  padding-left: 15px;
+}
+
+.cart table thead th:last-child {
+  padding-right: 15px;
+}
+
+.cart table thead th:nth-child(3) {
+  text-align: center;
+}
+
+.cart table thead th:last-child {
+  text-align: right;
+}
+
+.cart table tbody th {
+  text-align: left;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.cart table tbody th:last-child {
+  text-align: right;
+  padding-right: 15px;
+  font-weight: 700;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgba(52, 73, 94, 0.3);
+  padding-top: 30px;
+}
+
+.clear {
+  padding: 10px 15px;
+  color: rgba(52, 73, 94, 0.8);
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 0.5px solid rgba(52, 73, 94, 0.3);
+  cursor: pointer;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+
+.clear:hover {
+  border-color: rgba(52, 73, 94, 1);
+  color: rgba(52, 73, 94, 1);
+}
+
+.subtotal {
+  display: grid;
+  gap: 5px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.subtotal p {
+  font-size: 14px;
+  color: rgba(52, 73, 94, 0.8);
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.checkout {
+  cursor: pointer;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background-color: #3498db;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.start,
+.continue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  color: rgba(52, 73, 94, 0.8);
 }

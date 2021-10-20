@@ -1,2 +1,53 @@
 .product {
+  display: flex;
+}
+
+.img {
+  width: 100px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.remove {
+  border: none;
+  background-color: transparent;
+  color: rgba(52, 73, 94, 0.6);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color 200ms ease;
+}
+
+.remove:hover {
+  color: rgba(52, 73, 94, 1);
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(52, 73, 94, 0.6);
+  border-radius: 5px;
+  width: 120px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.quantity span {
+  padding: 0.7rem 0;
+}
+
+.quantity button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
 }

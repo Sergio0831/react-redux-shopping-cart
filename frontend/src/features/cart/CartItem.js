@@ -23,22 +23,26 @@ const CartItem = ({ item }) => {
     <tr>
       <th className={styles.product}>
         <img className={styles.img} src={image} alt={name} />
-        <p className={styles.name}>{name}</p>
-        <p className={styles.description}>{description}</p>
-        <button
-          className={styles.remove}
-          onClick={() => handleRemoveItem(item)}
-        >
-          Remove
-        </button>
+        <div>
+          <p className={styles.name}>{name}</p>
+          <p className={styles.description}>{description}</p>
+          <button
+            className={styles.remove}
+            onClick={() => handleRemoveItem(item)}
+          >
+            Remove
+          </button>
+        </div>
       </th>
       <th className={styles.price}>&euro;{price}</th>
-      <th className={styles.quantity}>
-        <button onClick={() => handleDecreaseItem(item)}>-</button>
-        <span className={styles.count}>{quantity}</span>
-        <button onClick={() => handleIncreaseItem(item)}>+</button>
+      <th>
+        <div className={styles.quantity}>
+          <button onClick={() => handleDecreaseItem(item)}>-</button>
+          <span className={styles.count}>{quantity}</span>
+          <button onClick={() => handleIncreaseItem(item)}>+</button>
+        </div>
       </th>
-      <th className={styles.total}>&euro;{total.toFixed(2)}</th>
+      <th>&euro;{total.toFixed(2)}</th>
     </tr>
   );
 };

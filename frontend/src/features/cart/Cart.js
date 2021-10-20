@@ -22,9 +22,9 @@ const Cart = () => {
     <section className={styles.cart}>
       <h2>Shopping Cart</h2>
       {cart.cartItems.length === 0 ? (
-        <div>
+        <div className={styles.cartEmpty}>
           <p>Cart is empty</p>
-          <Link to='/'>
+          <Link className={styles.start} to='/'>
             {" "}
             <BsArrowLeft />
             Start Shopping
@@ -52,12 +52,13 @@ const Cart = () => {
               Clear Cart
             </button>
             <div className={styles.subtotal}>
-              <span className={styles.amount}>
-                &euro;{cart.cartTotalAmount}
-              </span>
+              <div className={styles.amount}>
+                <h4>Subtotal </h4>
+                <span> &euro;{cart.cartTotalAmount}</span>
+              </div>
               <p>Taxes and shipping calculated at checkout</p>
               <button className={styles.checkout}>Check Out</button>
-              <Link to='/'>
+              <Link className={styles.continue} to='/'>
                 {" "}
                 <BsArrowLeft />
                 Continue Shopping
