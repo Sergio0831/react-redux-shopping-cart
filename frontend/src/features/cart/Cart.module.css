@@ -1,0 +1,11 @@
+.cart {
+  padding: 0 2rem;
+}
+
+.cart h2 {
+  text-align: center;
+}
+
+.cart table {
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.productsList {
+  width: 100%;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: center;
+  gap: 50px;
+}
